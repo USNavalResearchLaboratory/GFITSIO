@@ -1,0 +1,162 @@
+<HTML>
+<HEAD>
+<TITLE>gfitsio.lvlib:gfitsio-get-hdu-list.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="gfitsio.lvlib:gfitsio_get_hdu_list.vi"></A><H2>gfitsio.lvlib:gfitsio-get-hdu-list.vi</H2>
+<P>Return a list of HDUs in the FITS file.  The list is returned in two 1D arrays:  </P>
+<P></P>
+<P>An array of strings contains the names (if they are stored in the EXTNAME keyword) of each HDU.  If the HDU is unnamed the corresponding string will be empty.</P>
+<P></P>
+<P>An array of enumerations contains the type of each HDU (image, binary table or ascii table).</P>
+<P><IMG SRC="gfitsio_lvlib_gfitsio-get-hdu-listc.png" ALT="gfitsio.lvlib:gfitsio-get-hdu-list.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdlrn.png" ALT="cdlrn"></P>
+</TD>
+<TD>
+<B>gfits refnum</B> <P>The file refnum associated with the file you want to access.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P>Describes error conditions that occur before this VI or function runs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning and is, in most cases, the name of the VI or function that produced the error or warning.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idlrn.png" ALT="idlrn"></P>
+</TD>
+<TD>
+<B>dup gfits refnum</B> <P>Returns <B>gfits refnum</B> unchanged. </P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P>If <B>error in</B> indicates that an error occurred before this VI or function ran, <B>error out</B> contains the same error information. Otherwise, it describes the error status that this VI or function produces.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning and is, in most cases, the name of the VI or function that produced the error or warning.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1dstr.png" ALT="i1dstr"></P>
+</TD>
+<TD>
+<B>hdu names</B> <P>The names (if they exist) of each HDU.  If the HDU is unnamed the corresponding string will be empty.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>hdu name</B> </TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1di32.png" ALT="i1di32"></P>
+</TD>
+<TD>
+<B>hdu types</B> <P>The type of each HDU (image, binary table or ascii table).</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>hdutype</B> </TD>
+</TR>
+</Table>
+</UL>
+</BODY>
+</HTML>

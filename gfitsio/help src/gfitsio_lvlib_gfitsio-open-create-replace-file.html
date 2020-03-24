@@ -1,0 +1,176 @@
+<HTML>
+<HEAD>
+<TITLE>gfitsio.lvlib:gfitsio-open-create-replace-file.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="gfitsio.lvlib:gfitsio_open_create_replace_file.vi"></A><H2>gfitsio.lvlib:gfitsio-open-create-replace-file.vi</H2>
+<P>Opens an existing FITS file, creates a new FITS file, or replaces an existing FITS file, programmatically or interactively using a file dialog box. You can optionally specify a dialog prompt and default file name.</P>
+<HR>
+<H3>Connector Pane</H3>
+<P><IMG SRC="gfitsio_lvlib_gfitsio-open-create-replace-filec.png" ALT="gfitsio.lvlib:gfitsio-open-create-replace-file.vi"></P>
+<HR>
+<H3>Controls and Indicators</H3>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>prompt</B> <P>The message that appears in the title bar of the file dialog box.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cpath.png" ALT="cpath"></P>
+</TD>
+<TD>
+<B>file path (dialog if empty)</B> <P>The path name of the file to access. If file path is empty (default) or is &lt;Not A Path&gt;, the VI displays a dialog box from which you can select a file.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cenum.png" ALT="cenum"></P>
+</TD>
+<TD>
+<B>function (open)</B> <P>Operation mode for the VI. The options are:</P>
+<P></P>
+<P><B>open</B> - open an existing file</P>
+<P><B>open or create</B> - open an existing file or create a new one if it does not exist</P>
+<P><B>create or replace</B> - create a new file, replacing an existing one, if necessary</P>
+<P><B>create</B> - create a new file</P>
+<P><B>open (read only)</B> - open an existing file for reading only</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P>Describes error conditions that occur before this VI or function runs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning and is, in most cases, the name of the VI or function that produced the error or warning.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>default name</B> <P>The name you want to appear as the initial file name in the dialog box if it is displayed.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>advisory dialog? (display:T)</B> <P>Specifies whether to display notification dialogs to the user when a file is not found or would be overwritten.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idlrn.png" ALT="idlrn"></P>
+</TD>
+<TD>
+<B>gfits refnum</B> <P>A reference to the opened or created file.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ipath.png" ALT="ipath"></P>
+</TD>
+<TD>
+<B>new file path</B> <P>Path of the opened or created file.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P>If <B>error in</B> indicates that an error occurred before this VI or function ran, <B>error out</B> contains the same error information. Otherwise, it describes the error status that this VI or function produces.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning and is, in most cases, the name of the VI or function that produced the error or warning.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</BODY>
+</HTML>
