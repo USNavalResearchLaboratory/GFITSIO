@@ -1,1 +1,4 @@
-
+src/*.obj
+src/*.exp
+src/*.gfitsio32.lib
+src/*.gfitsio64.lib
