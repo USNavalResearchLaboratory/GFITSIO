@@ -165,6 +165,7 @@
 		<Item Name="gfitsio-scan-date-time-string.vi" Type="VI" URL="../gfitsio-scan-date-time-string.vi"/>
 		<Item Name="gfitsio-windows-message-box.vi" Type="VI" URL="../gfitsio-windows-message-box.vi"/>
 		<Item Name="gfitsio-sizeof-cfitsio-datatype.vi" Type="VI" URL="../gfitsio-sizeof-cfitsio-datatype.vi"/>
+		<Item Name="_dll_path.vi" Type="VI" URL="../_dll_path.vi"/>
 	</Item>
 	<Item Name="typedefs" Type="Folder">
 		<Item Name="cfitsio-bitpix.ctl" Type="VI" URL="../cfitsio-bitpix.ctl"/>
@@ -173,7 +174,4 @@
 		<Item Name="gfitsio-error-codes.ctl" Type="VI" URL="../gfitsio-error-codes.ctl"/>
 		<Item Name="gfitsio-refnum.ctl" Type="VI" URL="../gfitsio-refnum.ctl"/>
 	</Item>
-	<Item Name="cfitsio.dll" Type="Document" URL="/&lt;userlib&gt;/gfitsio/cfitsio.dll"/>
-	<Item Name="gfitsio.dll" Type="Document" URL="/&lt;userlib&gt;/gfitsio/gfitsio.dll"/>
-	<Item Name="dir.mnu" Type="Document" URL="/&lt;userlib&gt;/gfitsio/dir.mnu"/>
 </Library>
